@@ -1,0 +1,57 @@
+{
+  "language": "ru",
+  "ui_mode": "simple",
+  "favorites": [],
+  "auto_commit_message": true,
+  "show_emoji": true,
+  "editor": null,
+  "scheduler": {
+    "enabled": false,
+    "interval_minutes": 30,
+    "action": "commit+push",
+    "only_when_changes": true,
+    "quiet_hours": null,
+    "last_run": null,
+    "run_count": 0,
+    "last_result": null
+  },
+  "security": {
+    "scan_secrets": true,
+    "block_commit_on_secrets": true,
+    "warn_large_files_mb": 50,
+    "backup_git_before_danger": true,
+    "max_backups": 10
+  },
+  "precommit": {
+    "enabled": false,
+    "run_before": "commit",
+    "tests": false,
+    "test_command": "pytest -q",
+    "linters": false,
+    "linter_commands": [
+      "ruff check ."
+    ],
+    "formatters": false,
+    "formatter_commands": [
+      "black ."
+    ],
+    "abort_on_failure": true
+  },
+  "email": {
+    "enabled": false,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "use_tls": true,
+    "username": "",
+    "password": "",
+    "from_addr": "",
+    "to_addrs": [],
+    "events": {
+      "commit": true,
+      "push": false,
+      "conflict": false
+    },
+    "attach_diff": true,
+    "only_on_error": false
+  }
+}
