@@ -1,7 +1,9 @@
 {
   "language": "ru",
   "ui_mode": "simple",
-  "favorites": [],
+  "favorites": [
+    "C:\\razrab_arm\\test_prj"
+  ],
   "auto_commit_message": true,
   "show_emoji": true,
   "editor": null,
